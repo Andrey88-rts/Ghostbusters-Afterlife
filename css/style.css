@@ -281,4 +281,78 @@ body {
 .ratiing-text-bold {
   font-weight: bold;
 }
+
+.cast {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+
+.tabs-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section-title {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #a5a5a5;
+  margin-right: 30px;
+}
+
+.section-title.active {
+  color: #363636;
+  font-weight: 900;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 35px;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.name {
+  font-size: 16px;
+  color: #5671F6;
+  line-height: 100%;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.en-name {
+  color: #A5A5A5;
+  font-size: 19px;
+  line-height: 100%;
+}
 /*# sourceMappingURL=style.css.map */
