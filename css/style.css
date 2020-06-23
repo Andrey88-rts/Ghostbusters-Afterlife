@@ -313,14 +313,20 @@ body {
 }
 
 .tabs-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  visibility: hidden;
+}
+
+.tabs-content.visible {
+  visibility: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .section-title {
@@ -329,6 +335,7 @@ body {
   line-height: 28px;
   color: #a5a5a5;
   margin-right: 30px;
+  cursor: pointer;
 }
 
 .section-title.active {
@@ -438,6 +445,19 @@ body {
 
 .mobile-buttons {
   display: none;
+}
+
+.button-next {
+  display: none;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 99;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
@@ -608,6 +628,12 @@ body {
   .news {
     padding-top: 50px;
     padding-bottom: 70px;
+  }
+  .news-card {
+    max-width: 90%;
+  }
+  .button-next {
+    display: block;
   }
   .mobile-buttons {
     display: block;

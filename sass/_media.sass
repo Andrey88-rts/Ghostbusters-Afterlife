@@ -14,7 +14,17 @@
   border-radius: 40px
 .mobile-buttons
   display: none
- 
+.button-next
+  display: none 
+  background-color: transparent
+  border: none
+  position: absolute
+  top: 50%
+  right: 0
+  transform: translateY(-50%)
+  z-index: 99
+  cursor: pointer
+
 
 @media (max-width: 1200px)
   .container
@@ -127,6 +137,10 @@
   .news
     padding-top: 50px
     padding-bottom: 70px
+    &-card
+      max-width: 90%
+  .button-next
+    display: block
   .mobile-buttons
     display: block
     margin-left: auto

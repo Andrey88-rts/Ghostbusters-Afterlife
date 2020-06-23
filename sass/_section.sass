@@ -96,15 +96,20 @@
   align-items: center
   margin-bottom: 60px
   &-content
-    display: flex
+    display: none
     align-items: center
-    flex-wrap: wrap    
+    flex-wrap: wrap
+    visibility: hidden
+.tabs-content.visible
+  visibility: visible
+  display: flex
 .section-title  
   font-weight: normal
   font-size: 24px
   line-height: 28px
   color: #a5a5a5
   margin-right: 30px
+  cursor: pointer
   &.active
     color: #363636
     font-weight: 900
